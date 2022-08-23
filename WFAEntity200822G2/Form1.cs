@@ -17,7 +17,7 @@ namespace WFAEntity200822G2
         public void KisileriDoldur(List<Kisi> kisiListesi)
         {
             listView1.Items.Clear();
-
+            
             foreach (var item in kisiListesi)
             {
                 ListViewItem listViewItem = new ListViewItem();
@@ -79,6 +79,7 @@ namespace WFAEntity200822G2
 
         private void btnYenile_Click(object sender, EventArgs e)
         {
+            RehberDBEntities db = new RehberDBEntities();
             KisileriDoldur(db.Kisis.ToList());
         }
 

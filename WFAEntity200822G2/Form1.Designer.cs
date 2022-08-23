@@ -197,6 +197,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(214, 20);
             this.textBox4.TabIndex = 6;
+            this.textBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAd_KeyPress);
             // 
             // gbxRehber
             // 
